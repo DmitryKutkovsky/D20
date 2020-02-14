@@ -60,7 +60,7 @@ public class RegistrationController {
             String mailTo=user.getUsername ();
             String pathToAttachment="img/invitation.pdf";
 
-            //mailService.send(mailTo, subject, message, pathToAttachment);
+            mailService.send(mailTo, subject, message, pathToAttachment);
         }
 
 
